@@ -1,12 +1,5 @@
 # hacker-news-angular
 
-<p align="center">
-    <img src="https://cloud.githubusercontent.com/assets/499550/17546273/5aabc5fc-5eaf-11e6-8d6a-ad00937e8bd6.png" width="700px">
-  </a>
-</p>
-
-
-
 ## Architecture Overview
 
 <img width="973" alt="screen shot 2016-08-11 at 6 06 57 pm" src="https://cloud.githubusercontent.com/assets/499550/17607895/786a415a-5fee-11e6-9c11-45a2cfdf085c.png">
@@ -26,9 +19,9 @@ yarn global add @angular/cli
 
 Clone the repository using **Git**:
 ```bash
-git clone https://github.com/dj0nny/hacker-news-angular
+git clone hhttps://github.com/ravikulkarni228/hacker_news
 ```
-Or download [here](https://github.com/dj0nny/hacker-news-angular/archive/develop.zip).
+Or download [here](https://github.com/ravikulkarni228/hacker_news/archive/develop.zip).
 
 ### Install
 
