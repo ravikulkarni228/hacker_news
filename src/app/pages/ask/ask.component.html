@@ -1,0 +1,9 @@
+<div class="news-list">
+  <div class="news-item" *ngFor="let askItem of ask">
+    <a [href]="askItem.title" target="_self" class="title">{{ askItem.title }}</a>
+    <span class="domain">({{ askItem.domain }})</span>
+    <div class="subtext">
+      {{ askItem.points }} points by {{ askItem.user }} {{ askItem.time_ago }} | <!--<router-link class="comment-link" :to="{name: 'news-detail', params: { id: item.id }}">{{ item.comments_count }} comments</router-link>-->
+    </div>
+  </div>
+</div>
