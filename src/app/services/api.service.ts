@@ -8,6 +8,12 @@ import { News, Newest, Ask, Job, Show} from '../models';
   providedIn: 'root'
 })
 export class ApiService {
+
+  getAskURL(askid: Ask) {
+    let ask_URL = 'https://hacker-news.firebaseio.com/v0/item/'+ askid+'.json?print=pretty';
+    return this.http.get(ask_URL);
+  }
+
   BASE_URL = 'https://api.hackernews.io';
 
   constructor(private http: HttpClient) { }
@@ -20,10 +26,15 @@ export class ApiService {
     return this.http.get<Newest[]>(this.BASE_URL + '/newest');
   }
 
+  BASE_URL_HACKER_NEWS = 'https://hacker-news.firebaseio.com/v0/askstories.json?print=pretty';
   getAsk(): Observable<Ask[]> {
-    return this.http.get<Ask[]>(this.BASE_URL + '/ask');
+    // data = this.http.get<Ask[]>(this.BASE_URL_HACKER_NEWS + '/ask');
+    // let data = this.http.get<Ask[]>(this.BASE_URL_HACKER_NEWS);
+    // let ask_URL = 'https://hacker-news.firebaseio.com/v0/item/'+ +'.json?print=pretty';
+    return this.http.get<Ask[]>(this.BASE_URL_HACKER_NEWS );
   }
 
+  
   getJob(): Observable<Job[]> {
     return this.http.get<Ask[]>(this.BASE_URL + '/jobs');
   }
